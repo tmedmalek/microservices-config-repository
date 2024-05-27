@@ -3,3 +3,12 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+microservice:
+  stock-service:
+    endpoints:
+      endpoint-stock: http://localhost:8091/api/v1/stock
+        
+  product-service:
+    endpoints:
+      endpoint:
+        uri: http://localhost:8090/api/v1/produit
